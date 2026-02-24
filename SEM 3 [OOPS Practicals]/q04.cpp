@@ -20,7 +20,9 @@ public:
     Complex mul(const Complex &o) const {
         return Complex(real*o.real - imag*o.imag, real*o.imag + imag*o.real);
     }
-    void display() const { cout << real << (imag>=0?"+":"") << imag << "i\n"; }
+        void display() {
+        cout << real << " + " << imag << "i" << endl;
+    }
 };
 
 int main() {
